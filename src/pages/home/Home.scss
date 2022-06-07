@@ -1,19 +1,31 @@
-.home{
+.home {
    display: grid;
    grid-template-columns: auto 4fr;
 
-   .homeContainer{
-      // background-color: lightblue;
-      .widgets, .charts{
+   .homeContainer {
+    // background-color: lightblue;
+      .widgets,
+      .charts {
          display: flex;
          padding: 20px;
          gap: 10px;
       }
-      .charts{
+      .charts {
          padding: 5px 20px;
          display: grid;
          grid-template-columns: 2fr 4fr;
          padding: 10px;
       }
+      .listContainer {
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+
+      .listTitle {
+         font-weight: 500;
+         color: gray;
+         margin-bottom: 15px;
+      }
    }
+}
 }
