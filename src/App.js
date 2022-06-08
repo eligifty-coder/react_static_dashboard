@@ -8,7 +8,6 @@ import { userInputs, productInputs } from "./formSource";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './style/dark.scss'
 import { DarkModeContext } from "./context/darkModeContext";
-import DarkModeContextProvider from "./context/darkModeProvider";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext)

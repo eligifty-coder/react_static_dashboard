@@ -35,7 +35,6 @@ const DarkModeContextProvider = ({ children }) => {
       return dispatch({ type: 'TOGGLE_DARK_MODE' })
    }
    const setDarkMode = () => { 
-      alert(1)
       return dispatch({ type: 'SET_DARK_MODE' })
    }
    const setLightMode = () => {
