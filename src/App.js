@@ -12,11 +12,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path='/login' element={<Login />} />
-          <Route path='/users/' element={<List />}>
+          <Route path='/users' >
+            <Route index element={<List />}/>
             <Route path=':userId' element={<Single />} />
             <Route path='new' element={<New />} />
           </Route>
-          <Route path='/products/' element={<List />}>
+          <Route path='/products'>
+            <Route index element={<List />} />
             <Route path=':productId' element={<Single />} />
             <Route path='new' element={<New />} />
           </Route>
